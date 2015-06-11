@@ -1,0 +1,55 @@
+@import "compass/css3/transition"
+
+@import "susy"
+@import "breakpoint"
+@import "modular-scale"
+
+//--- Variables
+//media
+$break-phone:   600px
+$break-small:   768px
+$break-medium:  992px
+$break-1150:    1150px
+$break-large:  1240px
+
+//colors
+$color-bg: white
+$color-blue-banner: #68A4C4
+$color-blue-banner-text: #2D617D
+$color-blue: #0073AE
+
+
+//sizes
+
+$wide-border: 5%
+
+//--- Mixins
+
+
+
+@mixin btn($bg-color,$color)
+  border: 1px solid #000000
+  padding: 5px 12px 5px 10px
+  background: $bg-color
+  color: $color
+  i
+    font-size: 15px
+    margin-right: 4px
+  &:hover
+    background: darken($bg-color, 10%)
+    color: lighten($color, 30%)
+
+@mixin horizontal-list($margin-right)
+  list-style-type: none
+  margin: 0
+  li
+    float: left
+    margin-right: $margin-right
+
+
+@import "lib/responsive"
+@import "partials/mixins"
+@import "partials/fonts"
+@import "partials/loader"
+@import "partials/companies"
+@import "partials/style"

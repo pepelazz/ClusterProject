@@ -1,0 +1,250 @@
+html, body
+  position: relative
+  height: 100%
+  width: 100%
+  margin: 0px
+  padding: 0px
+  background-color: $color-bg
+  font-size: $base-font-size
+  line-height: $base-line-height
+
+html
+  font-family: 'liberationserif-regular'
+  font-size: 100%
+  @include breakpoint(max-width $break-large)
+    font-size: 15px
+  @include breakpoint(max-width $break-medium)
+    font-size: 13px
+
+strong
+  font-family: 'liberationserif-bold'
+
+$nav-height: 45px
+.nav
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  width: 100%
+  height: $nav-height
+  background-color: #EFF6F9
+  -webkit-transition-duration: .5s
+  transition-duration: .5s
+  -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 )
+  transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 )
+  -webkit-transition-property: -webkit-transform
+  transition-property: transform
+  &.hide
+    @include transform(translateY(-100%))
+  .logo
+    display: inline-block
+    margin-left: $wide-border
+    height: 45px
+    line-height: 65px
+    img
+      height: 35px
+    &:hover
+      opacity: 0.5
+  .menu-wrapper
+    display: inline-block
+    height: 45px
+    line-height: 1
+    padding-left: 20px
+    vertical-align: middle
+    font-family: sans-serif
+    a
+      text-decoration: none
+      opacity: 0.5
+      &:hover
+        opacity: 1
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+#first-page-banner
+  position: relative
+  height: 100vh
+  background-color: $color-blue-banner
+  .logo-text
+    font-family: sans-serif
+    text-align: center
+    padding-top: 5rem
+    padding-bottom: 2rem
+    h1
+      margin: 0
+      color: white
+      font-size: 6rem
+      text-shadow: 0 1px 2px #5A8DA9
+    small
+      color: $color-blue-banner-text
+      font-size: 1.67rem
+      font-weight: 100
+  img
+    display: block
+    margin: 0 auto
+  .rocket-picture
+    height: 21rem
+    width: 100%
+  .smoke-picture
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+
+.main-area
+  padding-left: $wide-border
+  padding-right: $wide-border
+  margin-top: $nav-height
+  &.first-page
+    margin-top: 0
+  .teaser-grid
+    padding: 2rem 0
+  .row
+    @include layout(12 no-gutters)
+    overflow: hidden
+    .col1
+      @include span(6)
+      .block1-1, .block1-2
+        position: relative
+        padding: 1rem
+        box-sizing: border-box
+        height: 15rem
+        span
+          display: block
+          font-size: ms(0)
+          font-weight: 100
+          &.block-title
+            font-size: ms(1)
+            font-weight: 500
+        .link-to
+          position: absolute
+          bottom: 1rem
+          right: 1rem
+          text-decoration: none
+          font-size: ms(0)
+          opacity: 0.5
+          &:hover
+            opacity: 1
+
+      .block1-1
+        background-color: #CFEEF3
+      .block1-2
+        background-color: #E0F0D3
+    .col2
+      @include span(6)
+      height: 30rem
+      &.akadempark
+        background: url('./images/akadempark.jpg') no-repeat center center
+        background-size: cover
+
+.article-header-bg
+  font-family: 'liberationserif-regular'
+  height: 25rem
+  margin-top: $nav-height
+  width: 100%
+  .article-title
+    padding-top: 4rem
+    text-align: center
+    color: white
+    small
+      font-size: ms(1)
+  h2
+    width: 700px
+    margin: 0 auto
+    @include breakpoint(max-width $break-medium)
+      width: 100%
+      box-sizing: border-box
+      padding: 0 5rem
+
+.section-content
+  font-family: 'liberationserif-regular'
+  p
+    margin: 0
+    margin-bottom: ms(3)
+  blockquote
+    font-family: 'liberationserif-italic'
+    font-size: 1.45rem
+    text-align: right
+  .float-left
+    float: left
+    padding: 1rem 1rem 1rem 0
+  .full-width
+    width: 100%
+  .center-img
+    display: block
+    margin: 0 auto
+  .tip-text
+    cursor: pointer
+    opacity: 0.6
+  table
+    width: 100%
+    td, th
+      border: 1px solid #e7eaec
+      padding: 1rem
+      vertical-align: top
+  .table-20-45-45
+    font-size: 1rem
+    td:nth-child(1)
+      width: 20%
+    td:nth-child(2), td:nth-child(3)
+      width: 45%
+  li
+    margin-bottom: ms(0)
+
+
+.layoutSingleColumn
+  margin: 0 auto
+  width: 700px
+  box-sizing: border-box
+  @include breakpoint(max-width $break-large)
+    width: 100%
+    margin: 0
+    padding-left: 19rem
+  @include breakpoint(max-width $break-medium)
+    padding: 0 5rem
+
+.clear-both
+  clear: both
+
+.margin-bottom-ms3
+  margin-bottom: ms(3) !important
+
+.margin-bottom-ms0
+  margin-bottom: ms(0) !important
+
+.full-size-strip-img
+  width: 100%
+  margin-bottom: ms(3)
+
+.three-thesis
+  padding: 0
+  list-style: none
+  li
+    span
+      display: block
+      box-sizing: border-box
+      padding: 1rem
+      background-color: darken(#FAFAFA, 10%)
+
+.article-menu
+  position: absolute
+  top: 25rem
+  left: 1rem
+  width: 15rem
+  font-size: 1rem
+  list-style: none
+  @include breakpoint(max-width $break-medium)
+    display: none
+  li
+    margin-bottom: 0.5rem
+    a
+      text-decoration: none
+  &.fixed
+    position: fixed
+    top: 70px
+
+.anchor
+  padding-top: 50px
+  margin-top: -50px
+

@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'liberationserif-bold';
+    src: url('liberationserif-bold.eot');
+    src: url('liberationserif-bold.eot?#iefix') format('embedded-opentype'),
+         url('liberationserif-bold.woff') format('woff'),
+         url('liberationserif-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'liberationserif-bolditalic';
+    src: url('liberationserif-bolditalic.eot');
+    src: url('liberationserif-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('liberationserif-bolditalic.woff') format('woff'),
+         url('liberationserif-bolditalic.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+
+
+@font-face {
+    font-family: 'liberationserif-italic';
+    src: url('liberationserif-italic.eot');
+    src: url('liberationserif-italic.eot?#iefix') format('embedded-opentype'),
+         url('liberationserif-italic.woff') format('woff'),
+         url('liberationserif-italic.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'liberationserif-regular';
+    src: url('liberationserif-regular.eot');
+    src: url('liberationserif-regular.eot?#iefix') format('embedded-opentype'),
+         url('liberationserif-regular.woff') format('woff'),
+         url('liberationserif-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

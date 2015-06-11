@@ -1,0 +1,78 @@
+doctype
+html
+    head
+        block vars
+            - path="./"
+        meta(charset="utf-8")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width")
+        meta(name='yandex-verification' content='47abe18267347e4c')
+        meta(name="google-site-verification" content="EbvXhxLyoSpdHIFJC-GEbauU6CFRtgqfL9yvfKAEOYU")
+        title Cluster Project
+        meta(name="description" content="Проект про экономические кластеры. Новосибирск. Академгородок")
+        base(href="/" target="_self")
+        block styles
+            link(href="#{path}lib/normalize.css" rel="stylesheet")
+            link(href="#{path}/lib/opentip/opentip.css" rel="stylesheet")
+            link(href="#{path}index.css" rel="stylesheet")
+    body
+        include ./includes/loader.jade
+        include ./includes/nav.jade
+        block content
+            include ./includes/first-page-banner.jade
+            .main-area.first-page
+                .teaser-grid
+                    .row
+                        .col1
+                            .block1-1.cluster-programm
+                                span.block-title Итоги образовательной программы
+                                span Дата: декабрь 2014 года
+                                span Место проведения: <a href='http://www.academpark.com/' target='_blank'> Академпарк</a>
+                                span Организатор: <a href='http://aris-nso.ru/' target='_blank'>Центра кластерного развития Новосибирской области</a>
+                                a(href='/eduprog-sum.html').link-to подробнее
+                            .block1-2
+                        .col2.akadempark
+
+    block scripts
+        //script(src="//maps.googleapis.com/maps/api/js?v=3.exp")
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+        //script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.js")
+        script(src="#{path}lib/opentip/opentip-jquery.min.js")
+        script(src="#{path}app.js")
+        | <script>
+        | (function (i, s, o, g, r, a, m) {
+        | i['GoogleAnalyticsObject'] = r;
+        | i[r] = i[r] || function () {
+        | (i[r].q = i[r].q || []).push(arguments)
+        | }, i[r].l = 1 * new Date();
+        | a = s.createElement(o),
+        | m = s.getElementsByTagName(o)[0];
+        | a.async = 1;
+        | a.src = g;
+        | m.parentNode.insertBefore(a, m)
+        | })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        | ga('create', 'UA-46215386-1', 'rus-cat.com');
+        | ga('send', 'pageview');
+        | (function (d, w, c) {
+        | (w[c] = w[c] || []).push(function () {
+        | try {
+        | w.yaCounter29341160 = new Ya.Metrika({id: 29341160, webvisor:true, clickmap: true, trackLinks: true, accurateTrackBounce: true});
+        | } catch (e) {
+        | }
+        | });
+        | var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+        | n.parentNode.insertBefore(s, n);
+        | };
+        | s.type = "text/javascript";
+        | s.async = true;
+        | s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        | if (w.opera == "[object Opera]") {
+        | d.addEventListener("DOMContentLoaded", f, false);
+        | } else {
+        | f();
+        | }
+        | })(document, window, "yandex_metrika_callbacks");
+        | </script>
+        | <noscript>
+        | <div><img src="//mc.yandex.ru/watch/27091157" style="position:absolute; left:-9999px;" alt=""/></div>
+        | </noscript>
